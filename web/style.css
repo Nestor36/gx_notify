@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    margin-top: 25px;
+    border-radius: 25px;
+    width: 400px;
+}
+
+.bypass{
+    display: inline-flex;
+}
+
+legend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.center{
+    width: 50px;
+    height: 50px;
+
+}
+
+.center img{
+    top: 5%;
+}
+
+img{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index:9;
+}
+
+i{
+    color: dark;
+}
+
+.recuadrotxt{
+    flex-direction: column;
+}
+
+h2{
+    
+    color: rgb(54, 47, 40);
+    text-shadow: -5px 2px 3px #5a43308f;    padding: 0px 0px 0px 20px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+h3{
+    color: white;
+    padding: 0px 0px 10px 0px;
+    filter: blur(0.4px);
+
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+
+.success{
+    background-color: rgb(3, 166, 90);
+    border: 2px solid rgb(0, 94, 56);
+}
+
+.warning{
+    
+    background-color: rgb(219, 48, 86); 
+    border: 2px solid rgb(133, 29, 65);
+}
+
+.neutro{
+    background-color: rgb(0, 112, 224);
+    border: 2px solid rgb(59, 92, 192);
+}
+
+.information{
+    background-color: rgb(159, 155, 169);
+    border: 2px solid rgb(128, 124, 136);
+}
+
+.advertence{
+    background-color: rgb(243, 135, 37);
+    border: 2px solid rgb(196, 110, 26);
+}
+
+.success2{
+    background: rgb(10,125,20);
+    background: linear-gradient(90deg, rgba(10,125,20,0.9780287114845938) 0%, rgba(0,0,0,0.9836309523809523) 36%);
+}
+
+
+.transparent{
+    background:transparent;
+}
