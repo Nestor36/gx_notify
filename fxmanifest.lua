@@ -17,23 +17,31 @@ version '0.1'
 
 lua54 'yes'
 
+ui_page 'web/index.html'
+files {
+    'web/imgs/gifs/*.gif',
+    'web/animate.css',
+    'web/animate.min.css',
+    'web/index.html',
+    'web/jquery.js',
+    'web/script.js',
+    'web/style.css',
+    'web/wow.js',
+    'web/wow.min.js',
+}
+
+
 shared_scripts {
 	'@ox_lib/init.lua',
 
 }
 
 client_scripts {
-
+    'client.lua'
 }
 
-server_scripts {
-	'@oxmysql/lib/MySQL.lua',
-}
-
-dependencies {
-	'oxmysql',
-	'ox_lib',
-	'ox_inventory'
+server_scripts{
+    'server.lua'
 }
 
 

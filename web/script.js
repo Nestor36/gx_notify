@@ -7,6 +7,8 @@ function message(s, t, m, c, i){
   let image = document.getElementById("image");
   let image2 = document.getElementById('img2');
   let image2x = document.getElementById('imgof2');
+  let containerNotify = document.getElementById('notify_container');
+
 
   switch (s) {
 
@@ -33,6 +35,8 @@ function message(s, t, m, c, i){
       break;
     case 3:
 
+      containerNotify.style.display = "none";
+
       break;
     default:
 
@@ -41,18 +45,19 @@ function message(s, t, m, c, i){
     
 };
 
-document.addEventListener("DOMContentLoaded", function() {
 
-    message(
-      2, /* style: 1, 2, 3, 4 */ 
-      "ADVERTENCIA", /* tittle */
-      "Gracias por utilizar el script :3", /* description */
-      "advertence", /* color: neutro, information, success, advertence */
-      "rick.gif" /* gif */
+
+$(document).ready(function () {
+
+    $.post(
+      `https://${GetParentResourceName()}/action`,
+      JSON.stringify({
+        action: data,
+      })
     );
 
 });
 
-
-
-
+window.addEventListener('message', function(event) {
+    message(event.data.action.style, "ADMIN", event.data.action.text, "information", "rick.gif")
+});
